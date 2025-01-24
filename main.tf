@@ -74,5 +74,3 @@ resource "google_kms_key_ring_iam_member" "kms_key_access" {
   role        = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
   member      = "serviceAccount:${data.google_storage_project_service_account.gcs_account.email_address}"
 }
-
-
