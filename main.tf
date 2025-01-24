@@ -43,6 +43,8 @@ resource "google_kms_crypto_key" "key" {
   purpose                       = var.purpose
   import_only                   = var.import_only
   skip_initial_version_creation = var.skip_initial_version_creation
+  #  crypto_key_backend            = var.crypto_key_backend
+
 
   destroy_scheduled_duration = var.key_destroy_scheduled_duration
 
@@ -74,5 +76,3 @@ resource "google_kms_key_ring_iam_member" "kms_key_access" {
   role        = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
   member      = "serviceAccount:${data.google_storage_project_service_account.gcs_account.email_address}"
 }
-
-

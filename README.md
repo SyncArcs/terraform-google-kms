@@ -45,12 +45,13 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_google"></a> [google](#requirement\_google) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | n/a |
+| <a name="provider_google"></a> [google](#provider\_google) | ~> 4.0 |
 
 ## Modules
 
@@ -75,7 +76,6 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_crypto_key_backend"></a> [crypto\_key\_backend](#input\_crypto\_key\_backend) | (Optional) The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. The resource name is in the format 'projects//locations//ekmConnections/*' and only applies to 'EXTERNAL\_VPC' keys. | `string` | `null` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | A boolean flag to enable/disable service-account . | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags for the resource. | `map(string)` | `{}` | no |
@@ -109,3 +109,4 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 | <a name="output_keyring_names"></a> [keyring\_names](#output\_keyring\_names) | List of key ring names created in Google Cloud KMS. |
 | <a name="output_keys"></a> [keys](#output\_keys) | Map of key name => key self link. |
 <!-- END_TF_DOCS -->
+

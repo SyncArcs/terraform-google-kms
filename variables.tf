@@ -118,11 +118,12 @@ variable "skip_initial_version_creation" {
   description = "If set to true, the request will create CryptoKeys without any CryptoKeyVersions."
 }
 
-variable "crypto_key_backend" {
-  type        = string
-  default     = null
-  description = "(Optional) The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. The resource name is in the format 'projects//locations//ekmConnections/*' and only applies to 'EXTERNAL_VPC' keys."
-}
+#variable "crypto_key_backend" {
+#  type        = string
+#  default     = null
+#  description = "(Optional) The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. The resource name is in the format 'projects//locations//ekmConnections/*' and only applies to 'EXTERNAL_VPC' keys."
+#}
+
 
 variable "role" {
   type        = list(string)
