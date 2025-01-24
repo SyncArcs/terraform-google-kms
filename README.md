@@ -44,14 +44,13 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.9.5 |
-| <a name="requirement_google"></a> [google](#requirement\_google) | >=6.1.0 |
+| <a name="requirement_google"></a> [google](#requirement\_google) | >= 3.50.0, < 5.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | >=6.1.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | >= 3.50.0, < 5.0.0 |
 
 ## Modules
 
@@ -68,6 +67,7 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 | [google_kms_crypto_key_iam_member.key_encryption_role](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/kms_crypto_key_iam_member) | resource |
 | [google_kms_key_ring.key_ring](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/kms_key_ring) | resource |
 | [google_kms_key_ring_iam_member.kms_key_access](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/kms_key_ring_iam_member) | resource |
+| [google_project_service.enable_kms_api](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_service) | resource |
 | [google_client_config.current](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/client_config) | data source |
 | [google_storage_project_service_account.gcs_account](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/storage_project_service_account) | data source |
 
